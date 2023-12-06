@@ -38,36 +38,13 @@ void loop() {
   if (Serial.available() > 0) {
     int byteIn = Serial.read();
     if (byteIn == 0xAB) {
-      // Serial.flush();
+      Serial.flush();
       sendData();
     }
   }
 
-  Serial.println(a0Val);
+  // Serial.println(String(a0Val) + " " + a1Val + " " + a6Val);
   delay(20);
 }
-
-
-
-// void setup() {
-//   Serial.begin(9600);
-// }
-
-// void loop() {
-//   int a0v = analogRead(A0);
-//   int a1v = analogRead(A1);
-//   int a6v = analogRead(A6);
-
-//   if(Serial.available()>0) {
-//     int inByte = Serial.read();
-//     if(inByte == 10) {
-//       Serial.flush();
-//       Serial.println(a0v);
-//     }
-//   }
-
-//   Serial.println(a0v);
-//   delay(10);
-// }
 
  
