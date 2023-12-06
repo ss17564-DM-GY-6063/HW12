@@ -1,23 +1,9 @@
-# Final Project Template using Serial
+# HW12 
+Based on my final project, I experimented with the second idea. Although I am not yet certain whether I will choose this as the final option, it provided a great opportunity to exercise connecting p5.js and Arduino.
 
-Arduino reads a button on pin 2 and a potentiometer on pin A0 and passes those values on to the p5js sketch via a Serial connection.
+I am grateful for the professor's suggestions in the feedback. I attempted to create a potentiometer in Arduino to change the color of the screen. By collecting data from the potentiometer, I connected it to the RGB values of the screen in p5.js.
 
-The object that is created and sent to p5js looks like this:
+I think the tutorial is really helpful for me, I tried to use it as a template and change values in it to fit my project.
 
-```
-data = {
-  A0: { value: integer },
-  D2: {
-    isPressed: boolean,
-    count: integer
-  }
-}
-```
-
-In p5js ```A0.value``` is used to change ellipse size, ```D2.isPressed``` is used to add new ellipses to an array and ```D2.count``` is used to change the color of new ellipses.
-
-## Schematic
-![](https://6063d.github.io/imgs/FinalProject_sch.jpg)
-
-## Board
-![](https://6063d.github.io/imgs/FinalProject_bb.jpg)
+## A schematic drawing of the circuit
+![GgwiRX.jpg](https://imgpile.com/images/GgwiRX.jpg)
